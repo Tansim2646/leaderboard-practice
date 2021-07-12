@@ -1,0 +1,69 @@
+*,
+/* it used for deafault browser style resetting */
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+/* Varibales */
+:root {
+  --main-background-color: #f3f1ff;
+  --heading-color: #562eff;
+  --section-background: #ffffff;
+  --section-padding: 30px;
+  --horizontal-line-color: #d1d1d1;
+}
+
+/* Main background color */
+body {
+  background-color: var(--main-background-color);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.player-section {
+  background-color: var(--section-background);
+  width: 870px;
+  height: 679px;
+  padding: var(--section-padding);
+}
+.top-players{
+  border-bottom: 1px solid var(--horizontal-line-color);
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.player img {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+
+/* Typography */
+
+.heading {
+  font-size: 24px;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+}
+.player h2 {
+  font-size: 18px;
+}
